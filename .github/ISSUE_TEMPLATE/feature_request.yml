@@ -1,0 +1,36 @@
+name: Feature request
+description: Describe a data-drift workflow SchemaStory could improve.
+title: '[Feature]: '
+labels: [enhancement, needs-triage]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow and problem
+      description: What are you doing, what data is involved, and where does the current workflow fail?
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision the result should enable
+      description: What should a person or CI job be able to decide afterward?
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Current alternative
+      description: How do you handle this today, including conversion to JSON/JSONL if relevant?
+  - type: textarea
+    id: example
+    attributes:
+      label: Synthetic example
+      description: Optional, sanitized input and ideal output. Never include real private records.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This request concerns structural JSON drift rather than statistical or semantic value drift.
+          required: false

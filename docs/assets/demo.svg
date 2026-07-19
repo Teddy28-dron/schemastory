@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">SchemaStory structural drift report</title>
+  <desc id="desc">A dark interface showing two JSON samples changing and a report with five breaking changes, one warning, and three informational changes.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="60" y1="10" x2="1130" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="0.55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#080b14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="238" y1="84" x2="972" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="690" rx="26" fill="url(#canvas)"/>
+  <circle cx="1040" cy="20" r="260" fill="#7c3aed" opacity=".08"/>
+  <circle cx="55" cy="640" r="250" fill="#0ea5e9" opacity=".07"/>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif">
+    <g transform="translate(56 44)">
+      <rect width="52" height="52" rx="13" fill="#131d31" stroke="#334155"/>
+      <path d="M21 13h-4c-4 0-6 2-6 7v3c0 4-2 6-5 7 3 1 5 3 5 7v3c0 5 2 7 6 7h4M31 13h4c4 0 6 2 6 7v3c0 4 2 6 5 7-3 1-5 3-5 7v3c0 5-2 7-6 7h-4" fill="none" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M18 24h14M18 34h18" stroke="url(#accent)" stroke-width="3.5" stroke-linecap="round"/>
+      <text x="68" y="24" fill="#f8fafc" font-size="24" font-weight="750">SchemaStory</text>
+      <text x="68" y="47" fill="#94a3b8" font-size="14">Observed JSON structure drift, explained.</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="56" y="122" width="1088" height="516" rx="20" fill="#0b1120" stroke="#273449"/>
+      <rect x="56" y="122" width="1088" height="50" rx="20" fill="#141e31"/>
+      <path d="M56 152v-10a20 20 0 0 1 20-20h1048a20 20 0 0 1 20 20v10z" fill="#141e31"/>
+      <circle cx="84" cy="147" r="6" fill="#fb7185"/>
+      <circle cx="104" cy="147" r="6" fill="#fbbf24"/>
+      <circle cx="124" cy="147" r="6" fill="#34d399"/>
+      <text x="152" y="152" fill="#64748b" font-size="13" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">schemastory v1.jsonl v2.jsonl</text>
+
+      <line x1="398" y1="198" x2="398" y2="606" stroke="#263247"/>
+      <text x="84" y="213" fill="#64748b" font-size="11" font-weight="700" letter-spacing="1.4">OBSERVED SAMPLES</text>
+
+      <rect x="84" y="234" width="286" height="136" rx="13" fill="#101827" stroke="#263247"/>
+      <text x="104" y="258" fill="#38bdf8" font-size="11" font-weight="700" letter-spacing="1">BEFORE · 8 RECORDS</text>
+      <g fill="#aab6c8" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+        <text x="104" y="289">"sessionId": <tspan fill="#86efac">"s-001"</tspan></text>
+        <text x="104" y="315">"content": <tspan fill="#86efac">"Hello"</tspan></text>
+        <text x="104" y="341">"inputTokens": <tspan fill="#fde68a">12</tspan></text>
+      </g>
+
+      <path d="M213 383v18m0 0-7-7m7 7 7-7" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <rect x="84" y="414" width="286" height="136" rx="13" fill="#101827" stroke="#263247"/>
+      <text x="104" y="438" fill="#a78bfa" font-size="11" font-weight="700" letter-spacing="1">AFTER · 8 RECORDS</text>
+      <g fill="#aab6c8" font-size="12.5" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">
+        <text x="104" y="469">"traceId": <tspan fill="#86efac">"t-001"</tspan></text>
+        <text x="104" y="495">"content": <tspan fill="#c4b5fd">[{ ... }]</tspan></text>
+        <text x="104" y="521">"usage": <tspan fill="#fda4af">null</tspan></text>
+      </g>
+      <text x="84" y="584" fill="#64748b" font-size="12">Raw values stay in your source files.</text>
+
+      <text x="430" y="213" fill="#64748b" font-size="11" font-weight="700" letter-spacing="1.4">STRUCTURAL CHANGE REPORT</text>
+
+      <g transform="translate(430 234)">
+        <rect width="176" height="68" rx="13" fill="#27151d" stroke="#602637"/>
+        <text x="18" y="27" fill="#fda4af" font-size="12" font-weight="700">BREAKING</text>
+        <text x="18" y="54" fill="#fff1f2" font-size="24" font-weight="760">5</text>
+        <rect x="192" width="176" height="68" rx="13" fill="#2a2012" stroke="#624719"/>
+        <text x="210" y="27" fill="#fde68a" font-size="12" font-weight="700">WARNING</text>
+        <text x="210" y="54" fill="#fffbeb" font-size="24" font-weight="760">1</text>
+        <rect x="384" width="176" height="68" rx="13" fill="#102437" stroke="#1e4d6b"/>
+        <text x="402" y="27" fill="#7dd3fc" font-size="12" font-weight="700">INFO</text>
+        <text x="402" y="54" fill="#f0f9ff" font-size="24" font-weight="760">3</text>
+        <rect x="576" width="110" height="68" rx="13" fill="#111c2d" stroke="#2c3b51"/>
+        <text x="594" y="27" fill="#94a3b8" font-size="12" font-weight="700">TOTAL</text>
+        <text x="594" y="54" fill="#f8fafc" font-size="24" font-weight="760">9</text>
+      </g>
+
+      <g transform="translate(430 324)">
+        <rect width="686" height="78" rx="12" fill="#111827" stroke="#3e2934"/>
+        <rect width="5" height="78" rx="3" fill="#fb7185"/>
+        <rect x="20" y="17" width="68" height="22" rx="6" fill="#3a1924"/>
+        <text x="30" y="32" fill="#fda4af" font-size="10.5" font-weight="750">BREAKING</text>
+        <text x="102" y="32" fill="#f8fafc" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">$.message.content</text>
+        <text x="20" y="60" fill="#94a3b8" font-size="12.5">Observed types changed from <tspan fill="#e2e8f0">string</tspan> to <tspan fill="#e2e8f0">array</tspan>.</text>
+      </g>
+
+      <g transform="translate(430 414)">
+        <rect width="686" height="78" rx="12" fill="#111827" stroke="#3e2934"/>
+        <rect width="5" height="78" rx="3" fill="#fb7185"/>
+        <rect x="20" y="17" width="68" height="22" rx="6" fill="#3a1924"/>
+        <text x="30" y="32" fill="#fda4af" font-size="10.5" font-weight="750">BREAKING</text>
+        <text x="102" y="32" fill="#f8fafc" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">$.usage</text>
+        <text x="20" y="60" fill="#94a3b8" font-size="12.5">Record coverage dropped by <tspan fill="#e2e8f0">63 percentage points</tspan>.</text>
+      </g>
+
+      <g transform="translate(430 504)">
+        <rect width="686" height="78" rx="12" fill="#111827" stroke="#4b3a1e"/>
+        <rect width="5" height="78" rx="3" fill="#fbbf24"/>
+        <rect x="20" y="17" width="65" height="22" rx="6" fill="#372811"/>
+        <text x="29" y="32" fill="#fde68a" font-size="10.5" font-weight="750">WARNING</text>
+        <text x="99" y="32" fill="#f8fafc" font-size="14" font-weight="700" font-family="ui-monospace, SFMono-Regular, Consolas, monospace">$.timestamp</text>
+        <text x="20" y="60" fill="#94a3b8" font-size="12.5">Observed types changed from <tspan fill="#e2e8f0">string</tspan> to <tspan fill="#e2e8f0">null | string</tspan>.</text>
+      </g>
+    </g>
+
+    <g transform="translate(777 657)">
+      <circle cx="8" cy="-5" r="4" fill="#34d399"/>
+      <text x="20" y="0" fill="#64748b" font-size="12">local-only · zero runtime dependencies · no raw values in reports</text>
+    </g>
+  </g>
+</svg>

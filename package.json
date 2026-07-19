@@ -1,0 +1,61 @@
+{
+  "name": "schemastory",
+  "version": "0.1.0",
+  "description": "See how your real JSON shape changed, even when you never had a schema.",
+  "type": "module",
+  "bin": {
+    "schemastory": "./bin/schemastory.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node --test --test-reporter=spec",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run format:check && npm test",
+    "demo": "node ./bin/schemastory.js ./examples/v1.jsonl ./examples/v2.jsonl --format html --output ./examples/report.html --fail-on never",
+    "prepack": "npm run check"
+  },
+  "keywords": [
+    "json",
+    "jsonl",
+    "schema",
+    "schema-drift",
+    "data-contract",
+    "cli",
+    "data-quality"
+  ],
+  "author": "SchemaStory contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teddy28-dron/schemastory.git"
+  },
+  "homepage": "https://github.com/Teddy28-dron/schemastory#readme",
+  "bugs": {
+    "url": "https://github.com/Teddy28-dron/schemastory/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "eslint": "10.7.0",
+    "prettier": "3.9.5"
+  }
+}

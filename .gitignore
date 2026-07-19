@@ -1,0 +1,13 @@
+node_modules/
+coverage/
+*.tgz
+.DS_Store
+Thumbs.db
+schemastory-report.html
+.verify-*
+.package-test/
+/AGENTS.md
+/PROJECT_IDEAS.md
+.env
+.env.*
+!.env.example

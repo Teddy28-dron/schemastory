@@ -1,0 +1,8 @@
+{"sessionId":"sess_001","timestamp":"2026-07-18T08:00:00Z","message":{"role":"user","content":"Summarize the build failure"},"usage":{"inputTokens":18,"outputTokens":6},"tags":["build","support"]}
+{"sessionId":"sess_002","timestamp":"2026-07-18T08:01:00Z","message":{"role":"assistant","content":"The test runner could not find a fixture"},"usage":{"inputTokens":27,"outputTokens":11},"tags":["test"]}
+{"sessionId":"sess_003","timestamp":"2026-07-18T08:02:00Z","message":{"role":"user","content":"Compare the two payloads"},"usage":{"inputTokens":14,"outputTokens":5},"tags":["api"]}
+{"sessionId":"sess_004","timestamp":"2026-07-18T08:03:00Z","message":{"role":"assistant","content":"The content field changed type"},"usage":{"inputTokens":36,"outputTokens":9},"tags":["api","drift"]}
+{"sessionId":"sess_005","timestamp":"2026-07-18T08:04:00Z","message":{"role":"user","content":"Create a safe report"},"usage":{"inputTokens":22,"outputTokens":7},"tags":["privacy"]}
+{"sessionId":"sess_006","timestamp":"2026-07-18T08:05:00Z","message":{"role":"assistant","content":"No raw values were included"},"usage":{"inputTokens":31,"outputTokens":10},"tags":["privacy","report"]}
+{"sessionId":"sess_007","timestamp":"2026-07-18T08:06:00Z","message":{"role":"user","content":"Check the sample coverage"},"usage":{"inputTokens":16,"outputTokens":4},"tags":["quality"]}
+{"sessionId":"sess_008","timestamp":"2026-07-18T08:07:00Z","message":{"role":"assistant","content":"All required paths were present"},"usage":{"inputTokens":29,"outputTokens":8},"tags":["quality"]}
