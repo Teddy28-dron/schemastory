@@ -1,0 +1,8 @@
+{"traceId":"trace_101","timestamp":"2026-07-19T08:00:00Z","message":{"role":"user","content":[{"type":"text","text":"Summarize the build failure"}]},"usage":{"inputTokens":20,"completionTokens":7},"tags":["build","support"]}
+{"traceId":"trace_102","timestamp":"2026-07-19T08:01:00Z","message":{"role":"assistant","content":[{"type":"text","text":"The fixture is missing"}]},"tags":["test"]}
+{"traceId":"trace_103","timestamp":null,"message":{"role":"user","content":[{"type":"text","text":"Compare the payloads"}]},"tags":["api"]}
+{"traceId":"trace_104","timestamp":"2026-07-19T08:03:00Z","message":{"role":"assistant","content":[{"type":"text","text":"The content field is now an array"}]},"usage":{"inputTokens":39,"completionTokens":12},"tags":["api","drift"]}
+{"traceId":"trace_105","timestamp":"2026-07-19T08:04:00Z","message":{"role":"user","content":[{"type":"text","text":"Create a safe report"}]},"tags":["privacy"]}
+{"traceId":"trace_106","timestamp":"2026-07-19T08:05:00Z","message":{"role":"assistant","content":[{"type":"text","text":"Only aggregates are included"}]},"tags":["privacy","report"]}
+{"traceId":"trace_107","timestamp":null,"message":{"role":"user","content":[{"type":"text","text":"Check sample coverage"}]},"usage":{"inputTokens":18,"completionTokens":5},"tags":["quality"]}
+{"traceId":"trace_108","timestamp":"2026-07-19T08:07:00Z","message":{"role":"assistant","content":[{"type":"text","text":"A required path disappeared"}]},"tags":["quality"]}
